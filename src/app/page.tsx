@@ -64,7 +64,13 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <header className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 relative overflow-hidden">
+      <header 
+        className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 relative overflow-hidden"
+        style={{
+          background: "linear-gradient(to bottom, #F5F1EB 0%, #F5F1EB 60%, #FFFFFF 100%)"
+        }}
+      >
+
         {/* Background image - blurred, organic blob shape */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-8 md:mt-12">
           <div 
@@ -106,7 +112,7 @@ export default function HomePage() {
 
         {/* Scroll indicator */}
         <div
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 transition-opacity duration-500"
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 transition-opacity duration-500 z-10"
           style={{ opacity: scrollY > 100 ? 0 : 1 }}
         >
           <svg
@@ -126,8 +132,15 @@ export default function HomePage() {
       </header>
 
       {/* Mission Section */}
-      <section id="mission" className="py-24 md:py-32 px-6 bg-white">
-        <div className="max-w-3xl mx-auto">
+      <section 
+        id="mission" 
+        className="py-24 md:py-32 px-6 relative"
+        style={{
+          background: "linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #F5F1EB 100%)"
+        }}
+      >
+        
+        <div className="max-w-3xl mx-auto relative z-10">
           <p className="text-xs uppercase tracking-[0.3em] text-[#999] mb-8 font-sans">
             The Mission
           </p>
@@ -157,8 +170,15 @@ export default function HomePage() {
       </section>
 
       {/* Founder Section */}
-      <section id="founder" className="py-24 md:py-32 px-6">
-        <div className="max-w-3xl mx-auto">
+      <section 
+        id="founder" 
+        className="py-24 md:py-32 px-6 relative"
+        style={{
+          background: "linear-gradient(to bottom, #F5F1EB 0%, #F5F1EB 50%, #FFFFFF 100%)"
+        }}
+      >
+        
+        <div className="max-w-3xl mx-auto relative z-10">
           <p className="text-xs uppercase tracking-[0.3em] text-[#999] mb-8 font-sans">
             The Founder
           </p>
@@ -216,8 +236,15 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section id="connect" className="py-24 md:py-32 px-6 bg-white">
-        <div className="max-w-2xl mx-auto text-center">
+      <section 
+        id="connect" 
+        className="py-24 md:py-32 px-6 relative"
+        style={{
+          background: "linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 50%, #F5F1EB 100%)"
+        }}
+      >
+        
+        <div className="max-w-2xl mx-auto text-center relative z-10">
           <p className="font-serif italic text-3xl md:text-4xl text-[#1a1a1a] mb-4">
             It&apos;s never too early to reach out.
           </p>
@@ -237,8 +264,8 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-[#e5e0d8]">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <footer className="py-12 px-6 relative border-t border-[#e5e0d8]">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 relative z-10">
           <Image
             src="/swlogo.png"
             alt="samewaves"
