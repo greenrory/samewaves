@@ -42,7 +42,7 @@ export default function HomePage() {
               <a href="#">
                 <Image
                   src="/swlogo.png"
-                  alt="Same Waves"
+                  alt="samewaves"
                   width={80}
                   height={40}
                   className="h-8 md:h-10 w-auto"
@@ -65,10 +65,10 @@ export default function HomePage() {
 
       {/* Hero Section */}
       <header className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 relative overflow-hidden">
-        {/* Background image - blurred, organic blob shape (hidden on mobile) */}
-        <div className="absolute inset-0 hidden md:flex items-center justify-center pointer-events-none mt-12">
+        {/* Background image - blurred, organic blob shape */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none mt-8 md:mt-12">
           <div 
-            className="w-[55%] lg:w-[45%] aspect-[16/10] blur-md opacity-30"
+            className="w-[50%] sm:w-[45%] md:w-[55%] lg:w-[45%] aspect-[16/10] blur-md opacity-25 md:opacity-30"
             style={{
               backgroundImage: "url('/hero-bg.png')",
               backgroundSize: "cover",
@@ -81,7 +81,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Main headline */}
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#1a1a1a] leading-[1.15] tracking-tight">
-            Same Waves turns
+            samewaves turns
             <br />
             neurodivergent youth into
             <br />
@@ -133,7 +133,7 @@ export default function HomePage() {
           </p>
 
           <p className="font-serif text-2xl md:text-3xl text-[#1a1a1a] leading-relaxed">
-            Same Waves is a community for neurodivergent young people to feel
+            samewaves is a community for neurodivergent young people to feel
             understood — to know that it&apos;s okay to be different, and that
             different is something to embrace.
           </p>
@@ -241,14 +241,14 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <Image
             src="/swlogo.png"
-            alt="Same Waves"
+            alt="samewaves"
             width={60}
             height={30}
             className="h-6 w-auto"
           />
           <p className="text-sm text-[#999]">samewaves.org</p>
           <p className="text-sm text-[#999]">
-            © {new Date().getFullYear()} Same Waves
+            © {new Date().getFullYear()} samewaves
           </p>
         </div>
       </footer>

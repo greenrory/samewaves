@@ -19,16 +19,16 @@ const sourceSerif = Source_Serif_4({
 })
 
 export const metadata: Metadata = {
-  title: "Same Waves | Different minds. Same wave.",
-  description: "A peer mentorship initiative empowering neurodivergent youth through authentic connection. Same Waves turns neurodivergent youth into connected communities.",
+  title: "samewaves | different minds. same wave.",
+  description: "A community empowering neurodivergent youth through authentic connection. samewaves turns neurodivergent youth into connected communities.",
   icons: [
     { rel: "icon", url: "/favicon.png", type: "image/png" },
     { rel: "apple-touch-icon", url: "/favicon.png" },
   ],
   openGraph: {
-    title: "Same Waves",
-    description: "Different minds. Same wave.",
-    siteName: "Same Waves",
+    title: "samewaves",
+    description: "different minds. same wave.",
+    siteName: "samewaves",
   },
 }
 
