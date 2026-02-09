@@ -1,21 +1,35 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Source_Serif_4 } from "next/font/google"
 import { Providers } from "./components/providers"
-import { EB_Garamond } from "next/font/google"
 import { cn } from "@/utils"
 
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-const eb_garamond = EB_Garamond({
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-sans",
+  display: "swap",
+})
+
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-heading",
+  variable: "--font-serif",
+  display: "swap",
+  style: ["normal", "italic"],
 })
 
 export const metadata: Metadata = {
-  title: "jStack App",
-  description: "Created using jStack",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  title: "Same Waves | Different minds. Same wave.",
+  description: "A peer mentorship initiative empowering neurodivergent youth through authentic connection. Same Waves turns neurodivergent youth into connected communities.",
+  icons: [
+    { rel: "icon", url: "/favicon.png", type: "image/png" },
+    { rel: "apple-touch-icon", url: "/favicon.png" },
+  ],
+  openGraph: {
+    title: "Same Waves",
+    description: "Different minds. Same wave.",
+    siteName: "Same Waves",
+  },
 }
 
 export default function RootLayout({
@@ -24,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={cn(inter.variable, eb_garamond.variable)}>
-      <body className="font-sans bg-brand-50 text-brand-950 antialiased">
+    <html lang="en" className={cn(inter.variable, sourceSerif.variable)}>
+      <body className="font-sans bg-[#F5F1EB] text-[#1a1a1a] antialiased">
         <Providers>{children}</Providers>
       </body>
     </html>
